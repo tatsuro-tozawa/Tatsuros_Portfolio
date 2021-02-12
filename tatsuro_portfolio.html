@@ -4,22 +4,25 @@
 	 <meta charset="UTF-8">
 	 <!-- viewport -->
 	 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-	 <!-- Font Aweaomeの読み込み -->
+	 <!-- Font Aweaome -->
 	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-	 <!-- CSSファイルの読み込み -->
-	 <link rel="stylesheet" href="style.css">
+	 <!-- google fonts -->
 	 <link rel="preconnect" href="https://fonts.gstatic.com">
 	 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fjalla+One&display=swap" rel="stylesheet">
+	 <!-- favicon -->
+	 <link rel="icon" type="image/png" href="img/favicon.png">
+	 <!-- CSSファイル -->
+	 <link rel="stylesheet" href="style.css">
 	 <title>Tatsuros_Portfolio</title>
 </head>
 
 <body>
 	<nav>
 		<ul class="nav-list">
-			<li class="nav-list-item">Home</li>
-			<li class="nav-list-item">About</li>
-			<li class="nav-list-item">Portfolio</li>
-			<li class="nav-list-item">Skill</li>
+			<li class="nav-list-item"><a href="home.html">Home</a></li>
+			<li class="nav-list-item"><a href="about.html">About</a></li>
+			<li class="nav-list-item"><a href="portfolio.html">Portfolio</a></li>
+			<li class="nav-list-item"><a href="skill.html">Skill</a></li>
 		</ul>
 	</nav>
 
@@ -32,12 +35,12 @@
 		<div class="about-box">
 			<div class="about-me-photo clearfix">
 				<img class="about-me-photo" src="img/tatsuro.jpg">
-				<section class="about-me-text">
+				<section class="about-me-box">
 					<h2 class="about-me-name">Tatsuro Tozawa</h2>
 					<p class="about-me-profile">
 						秋田県出身。Home写真は地元で有名な「大曲の花火」の写真です。<br>
-						趣味は、小学生から続けているバスケットボールと、最近は、筋トレと読書です。<br>
-						高校卒業後、化学メーカーでプラントエンジニアとして働いておりましたが、<br>
+						趣味は小学生から続けているバスケットボールと、最近は筋トレと読書です。<br>
+						高校卒業後、化学メーカーでプラントエンジニアとして働いていましたが、<br>
 						プログラミングに興味を持ち、DMM WEBCAMPにてプログラミング学習を受講。<br>
 						デザインの設計からモダンなフロントエンド開発ができるエンジニアを目指し日々勉強中です。
 					</p>
@@ -45,5 +48,61 @@
 			</div>
 		</div>
 	</section>
+
+	<section class="portfolio">
+		<h1 class="portfolio-headline">Portfolio</h1>
+		<div class="container">
+			<div class="portfolio-box">portfolio1</div>
+			<div class="portfolio-box">portfolio2</div>
+			<div class="portfolio-box">portfolio3</div>
+		</div>
+	</section>
+
+	<section class="skill">
+		<h1 class="skill-headline">Skill</h1>
+		<div class="container">
+			<div class="skill-box">
+				<h1 class="skill-heading">免許・資格</h1>
+				<ul>
+					<li>普通自動車免許第一種運転免許</li>
+					<li>危険物取扱者 乙種第4類</li>
+					<li>高圧ガス製造保安責任者 乙種機械</li>
+					<li>機械保全技能士2級</li>
+					<li>ボイラー技士1級</li>
+					<li>ボイラー整備士</li>
+				</ul>
+			</div>
+			<div class="skill-box">
+				<h1 class="skill-heading">フロントエンド</h1>
+				<h2 class="skill-text">言語</h2>
+				<ul>
+					<div><i class="fab fa-html5">HTML5</i></div>
+					<div><i class="fab fa-css3-alt">CSS</i></div>
+					<div><i class="fab fa-js">Javascript</i></div>
+				</ul>
+				<h2 class="skill-text">フレームワーク</h2>
+				<ul>
+					<div><i class="fab fa-js-square">jQuery</i></div>
+				</ul>
+			</div>
+			<div class="skill-box">
+				<h1 class="skill-heading">デザイン</h1>
+				<ul>
+					<li>Adobe XD</li>
+					<li>Adobe Illustrator</li>
+				</ul>
+			</div>
+			<div class="skill-box">
+				<h1 class="skill-heading">バックエンド</h1>
+				<ul>
+					<li>Ruby</li>
+				</ul>
+			</div>
+	</section>
+
+	<footer>
+		<a href="https://github.com/tatsuro-tozawa"><i class="fab fa-github"></i></a>
+		<p class="footer-text">© 2021 Tatsuro</p>
+	</footer>
 
 </body>
