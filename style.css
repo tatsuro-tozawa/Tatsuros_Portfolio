@@ -48,7 +48,7 @@ a {
 	padding-top: 50px;
 }
 
-.about {
+#about {
 	width: 90%;
 	height: 600px;
 	margin: 0 auto;
@@ -86,7 +86,7 @@ a {
 	font-size: 18px;
 }
 
-.portfolio {
+#portfolio {
 	width: 100%;
 	height: 600px;
 	background-color: #dbedf0;
@@ -114,7 +114,7 @@ a {
 	padding: 10px;
 }
 
-.skill {
+#skill {
 	width: 90%;
 	height: 600px;
 	margin: 0 auto;
