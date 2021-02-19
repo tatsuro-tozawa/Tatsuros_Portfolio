@@ -1,3 +1,4 @@
+@charset "UTF-08"
 
 * {
   margin: 0;
@@ -11,9 +12,70 @@
   clear: both;
 }
 
+html {
+	font-size: 100%;
+}
+
+body {
+	font-family: "Yu Gothic Medium", "遊ゴシック Medium", YuGothic, "遊ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+	line-height: 1.7;
+	color: #432;
+}
+
 a {
 	text-decoration: none;
 	color: black;
+}
+
+img {
+	max-width: 100%;
+}
+
+.wrapper {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 4%;
+}
+
+#home {
+	background-image: url(img/fireworks.jpg);
+	min-height: 100vh;
+}
+
+.big-bg {
+	background-size: cover;
+	background-position: center top;
+}
+
+.page-header {
+	background: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.logo {
+	width: 150px;
+}
+
+.nav-list {
+	display: flex;
+	list-style: none;
+	font-size: 1.25rem;
+	text-transform: uppercase;
+}
+
+.nav-list li {
+	margin-left: 35px;
+}
+
+.nav-list a {
+	color: #432;
+}
+
+.nav-list a:hover {
+	color: #0bd;
 }
 
 .container {
@@ -22,74 +84,47 @@ a {
 	padding-top: 50px;
 }
 
-.home-visual-text {
-	font-family: Fjalla One;
-}
-
-.nav-list {
-	width: 100%;
+.home-content {
 	text-align: center;
-	padding: 15px 0;
-	margin: 0 auto;
-	background-color: #EEEEEE;
 }
 
-.nav-list-item {
-	list-style: none;
-	display: inline-block;
-	margin: 0 20px;
-}
-
-.home-visual {
-	width: 100%;
-	height: 500px;
-	background-image: url(img/fireworks.jpg);
-	background-size: cover;
-	background-position: center;
-}
-
-.home-visual-text {
-	font-size: 60px;
+.page-title {
+	font-size: 5rem;
 	color: white;
-	text-align: center;
-	padding-top: 50px;
+	font-family: "Fjalla One", sans-serif;
+	font-weight: normal;
 }
 
 #about {
-	width: 90%;
-	height: 600px;
-	margin: 0 auto;
-	padding-top: 100px;
+	min-height: 100vh;
+}
+
+.about-headline {
+	font-size: 50px;
+	border-bottom: 8px solid #f7f7f7;
+	text-align: center;
+	margin-top: 150px;
 }
 
 .about-box {
-	padding-top: 30px;
+	display: flex;
 }
 
-.about-me-headline {
-	font-size: 30px;
-	border-bottom: 8px solid #f7f7f7;
-	text-align: center;
-	line-height: 0.6;
-}
-
-.about-me-photo {
-	float: left;
+.my-photo {
 	border-radius: 50%;
 	height: 300px;
 }
 
-.about-me-box {
-	float: left;
-	margin-left: 20px;
+.text-box {
+	margin-left: 30px;
 }
 
-.about-me-name {
+.my-name {
 	font-size: 30px;
 	padding-bottom: 30px;
 }
 
-.about-me-profile {
+.my-profile {
 	font-size: 18px;
 }
 
