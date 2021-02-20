@@ -48,11 +48,9 @@ img {
 }
 
 .page-header {
-	background: #fff;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 100%;
 }
 
 .logo {
@@ -71,7 +69,7 @@ img {
 }
 
 .nav-list a {
-	color: #432;
+	color: white;
 }
 
 .nav-list a:hover {
@@ -99,7 +97,7 @@ img {
 	min-height: 100vh;
 }
 
-.about-headline {
+#about h1 {
 	font-size: 50px;
 	border-bottom: 8px solid #f7f7f7;
 	text-align: center;
@@ -110,7 +108,7 @@ img {
 	display: flex;
 }
 
-.my-photo {
+.about-box img {
 	border-radius: 50%;
 	height: 300px;
 }
@@ -119,35 +117,34 @@ img {
 	margin-left: 30px;
 }
 
-.my-name {
+.text-box h2 {
 	font-size: 30px;
 	padding-bottom: 30px;
 }
 
-.my-profile {
-	font-size: 18px;
+.text-box p {
+	font-size: 16px;
 }
 
 #portfolio {
-	width: 100%;
-	height: 600px;
+	min-height: 100vh;
 	background-color: #dbedf0;
-	margin: 0 auto;
-	padding-top: 100px;
 }
 
-.portfolio-headline {
-	font-size: 30px;
+#portfolio h1 {
+	font-size: 50px;
 	text-align: center;
-	line-height: 0.6;
 }
 
 .portfolio-box {
-	background-color: white;
-	width: 30%;
-	height: 300px;
-	margin: 10px;
-	padding: 10px;
+	display: grid;
+	gap: 26px;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	margin-top: 6%;
+}
+
+.portfolio-cover p {
+	text-align: center;
 }
 
 #skill {
