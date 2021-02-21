@@ -22,11 +22,10 @@
 			<h1><img class="logo" src="img/logo.jpg"></a></h1>
 			<nav>
 				<ul class="nav-list">
-					<li><a href=#home>Top</a></li>
 					<li><a href="#about">About</a></li>
 					<li><a href="#portfolio">Portfolio</a></li>
 					<li><a href="#skill">Skill</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -50,6 +49,13 @@
 						プログラミングに興味を持ち、プログラミングスクールにてHTML/CSS,Ruby/Ruby on Rails,JavaScriptの基礎を学びました。<br>
 						今現在は、モダンなフロントエンド開発ができるエンジニアを目指し日々勉強中です。
 					</p>
+					<ul>
+						<li>
+							<i class="fab fa-github"></i> GitHub: <a href="https://github.com/tatsuro-tozawa">https://github.com/tatsuro-tozawa</a>
+						</li>
+						<li>
+							<i class="fab fa-twitter"></i> Twiter: <a href="https://twitter.com/tozaro2">https://twitter.com/tozaro2</a>
+					</ul>
 				</section>
 			</div>
 		</div>
@@ -73,51 +79,58 @@
 		</div>
 	</section>
 
-	<section id="skill">
-		<h1 class="skill-headline">Skill</h1>
-		<div class="container">
-			<div class="skill-box">
-				<h1 class="skill-heading">免許・資格</h1>
+	<section id="skill" class="wrapper">
+		<h1>Skill</h1>
+		<div class="skill-box">
+			<div>
+				<h2 class="sub-title">Front-end</h2>
 				<ul>
-					<li>普通自動車免許第一種運転免許</li>
-					<li>危険物取扱者 乙種第4類</li>
-					<li>高圧ガス製造保安責任者 乙種機械</li>
-					<li>機械保全技能士2級</li>
-					<li>ボイラー技士1級</li>
-					<li>ボイラー整備士</li>
+					<li><i class="fab fa-html5"> HTML5</i></li>
+					<li><i class="fab fa-css3-alt"> CSS</i></li>
+					<li><i class="fab fa-js"> Javascript</i></li>
+					<li>- jQuery</li>
 				</ul>
 			</div>
-			<div class="skill-box">
-				<h1 class="skill-heading">フロントエンド</h1>
-				<h2 class="skill-text">言語</h2>
+			<div>
+				<h2 class="sub-title">Back-end</h2>
 				<ul>
-					<div><i class="fab fa-html5">HTML5</i></div>
-					<div><i class="fab fa-css3-alt">CSS</i></div>
-					<div><i class="fab fa-js">Javascript</i></div>
-				</ul>
-				<h2 class="skill-text">フレームワーク</h2>
-				<ul>
-					<div><i class="fab fa-js-square">jQuery</i></div>
+					<li>Ruby/Ruby on Rails</li>
 				</ul>
 			</div>
-			<div class="skill-box">
-				<h1 class="skill-heading">デザイン</h1>
+			<div>
+				<h2 class="sub-title">DevOps</h2>
 				<ul>
-					<li>Adobe XD</li>
-					<li>Adobe Illustrator</li>
+					<li><i class="fab fa-github"> Git/GitHub</i></li>
 				</ul>
 			</div>
-			<div class="skill-box">
-				<h1 class="skill-heading">バックエンド</h1>
-				<ul>
-					<li>Ruby</li>
-				</ul>
+		</div>
+	</section>
+
+	<section id="contact" class="wrapper">
+		<h1>Contact</h1>
+		<p>
+			最後までご覧頂きありがとうございました。<br>
+			ご質問、ご感想等お気軽にご寄せくださいませ。<br>
+		</p>
+		<form action="#">
+			<div>
+				<label for="name">Name</label>
+				<input type="text" id="name" name="your-name">
 			</div>
+			<div>
+				<label for="email">Email</label>
+				<input type="email" id="email" name="your-email">
+			</div>
+			<div>
+				<label for="message">Message</label>
+				<textarea id="message" name="your-message"></textarea>
+			</div>
+			<input type="submit" class="button" value="SEND">
+		</form>
 	</section>
 
 	<footer>
-		<a href="https://github.com/tatsuro-tozawa"><i class="fab fa-github"></i></a>
-		<p class="footer-text">© 2021 Tatsuro Tozawa</p>
+		<p>© 2021 Tatsuro Tozawa</p>
 	</footer>
 
 	<span id="back">
