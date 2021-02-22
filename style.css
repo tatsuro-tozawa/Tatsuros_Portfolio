@@ -81,34 +81,12 @@ button {
 	width: 150px;
 }
 
-.nav-list {
-	display: flex;
-	list-style: none;
-	font-size: 1.25rem;
-	text-transform: uppercase;
-}
-
-.nav-list li {
-	margin-left: 35px;
-}
-
-.nav-list a {
-	color: white;
-}
-
-.nav-list a:hover {
-	color: #0bd;
-}
-
 .btn {
-  /* ボタンの配置位置  */
   position: fixed;
   top: 32px;
   right: 16px;
-  /* ボタンの大きさ  */
   width: 48px;
   height: 48px;
-  /* 最前面に */
   z-index: 10;
 
 }
