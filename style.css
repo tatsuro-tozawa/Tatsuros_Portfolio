@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+::before , ::after {
+	box-sizing: inherit;
+}
+
 html {
 	font-size: 100%;
 }
@@ -41,6 +45,20 @@ img {
 
 .button:hover {
 	background: #0090aa;
+}
+
+button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	color: inherit;
+	vertical-align: middle;
+	text-align: inherit;
+	font: inherit;
+	-webkit-appearance: none;
+	appearance: none;
 }
 
 #home {
@@ -80,6 +98,78 @@ img {
 
 .nav-list a:hover {
 	color: #0bd;
+}
+
+.btn {
+  /* ボタンの配置位置  */
+  position: fixed;
+  top: 32px;
+  right: 16px;
+  /* ボタンの大きさ  */
+  width: 48px;
+  height: 48px;
+  /* 最前面に */
+  z-index: 10;
+
+}
+
+.btn-line {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 4px;
+	background-color: #d6d5d5;
+	transition: .2s;
+}
+
+.btn-line::before,
+.btn-line::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #d6d5d5;
+  transition: .5s;
+}
+
+.btn-line::before {
+  transform: translateY(-16px);
+}
+
+.btn-line::after {
+  transform: translateY(16px);
+}
+
+.menu {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	right: -50%;
+	width: 20%;
+	height: 80vh;
+	color: #efefef;
+	background-color: rgba(219, 237, 240, 0.7);
+	transition: .4s;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.menu-list:hover {
+	background-color: rgba(255, 255, 255, .5);
+	color: #333;
+	cursor: pointer;
+	transition: .4s;
+}
+
+.menu.open {
+  position: absolute;
+  right: 0;
 }
 
 .home-content {
@@ -254,6 +344,22 @@ footer p {
 }
 
 @media screen and (max-width:600px) {
+
+	.btn {
+		display: none;
+	}
+
+	.menu {
+		/* メニューを横に */
+		display: flex;
+		flex-direction: row;
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 100px;
+	}
+
 	.about-box {
 		flex-direction: column;
 		align-items: center;
