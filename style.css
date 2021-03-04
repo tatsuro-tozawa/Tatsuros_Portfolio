@@ -17,7 +17,7 @@ html {
 body {
 	font-family: "Yu Gothic Medium", "遊ゴシック Medium", YuGothic, "遊ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
 	line-height: 1.7;
-	color: #432;
+	color: #2f2725
 }
 
 a {
@@ -37,14 +37,10 @@ img {
 
 .button {
 	font-size: 1.375rem;
-	background: #0db;
+	background: #2f2725;
 	color: #fff;
 	border-radius: 5px;
 	padding: 18px 32px;
-}
-
-.button:hover {
-	background: #0090aa;
 }
 
 button {
@@ -62,8 +58,9 @@ button {
 }
 
 #home {
-	background-image: url(img/fireworks.jpg);
+	background-color: #8080803d;
 	min-height: 100vh;
+	margin-top: 120px;
 }
 
 .big-bg {
@@ -75,11 +72,6 @@ button {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-}
-
-.logo {
-	width: 100px;
-	padding-top: 100px;
 }
 
 .btn {
@@ -168,6 +160,7 @@ button {
 .menu.open {
   position: absolute;
   right: 0;
+  top: 0;
 }
 
 .home-content {
@@ -176,9 +169,10 @@ button {
 
 .page-title {
 	font-size: 5rem;
-	color: white;
+	color: #2f2725;
 	font-family: "Fjalla One", sans-serif;
-	font-weight: normal;
+	font-weight: 600;
+	padding-top: 250px;
 }
 
 #about {
@@ -187,7 +181,7 @@ button {
 
 #about h1 {
 	font-size: 50px;
-	border-bottom: 8px solid #f7f7f7;
+	border-bottom: 8px solid #8080803d;
 	text-align: center;
 	margin-top: 150px;
 }
@@ -220,7 +214,7 @@ button {
 
 #portfolio {
 	min-height: 100vh;
-	background-color: #dbedf0;
+	background-color: #8080803d;
 }
 
 #portfolio h1 {
@@ -236,8 +230,32 @@ button {
 	margin-top: 6%;
 }
 
+.portfolio-cover img:hover {
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
+	cursor: pointer;
+}
+
 .portfolio-cover p {
-	text-align: center;
+	text-align: left;
+}
+
+.submenu h3 {
+	margin: 0 0 1em 0;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.submenu h3:hover {
+	text-decoration: underline;
+}
+
+.submenu ul {
+	margin: 0 0 1em 0;
+	font-size: 14px;
+}
+
+.hidden {
+	display: none;
 }
 
 #skill {
@@ -246,7 +264,7 @@ button {
 
 #skill h1 {
 	font-size: 50px;
-	border-bottom: 8px solid #f7f7f7;
+	border-bottom: 8px solid #8080803d;
 	text-align: center;
 	margin-top: 150px;
 }
@@ -264,13 +282,13 @@ button {
 
 .sub-title {
 	padding: 0 8px 8px;
-	border-bottom: 2px #0bd solid;
+	border-bottom: 2px #2f2725 solid;
 	font-weight: normal;
 }
 
 #contact {
 	min-height: 100vh;
-	background-color: #dbedf0;
+	background-color: #8080803d;
 	margin-bottom: 100px;
 }
 
@@ -322,13 +340,13 @@ input[type="submit"] {
 }
 
 footer {
-	background-color: #EEEEEE;
+	background-color: #2f2725;
 	text-align: center;
 	padding: 25px 0;
 }
 
 footer p {
-	color: black;
+	color: white;
 }
 
 #back {

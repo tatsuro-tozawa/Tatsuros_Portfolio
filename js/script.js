@@ -1,7 +1,7 @@
 'use strict'
 
+// TOPへ戻るボタン
 $(function() {
-
     $('#back a').on('click',function() {
         $('body, html').animate( {
             scrollTop:0
@@ -11,12 +11,14 @@ $(function() {
 
 });
 
+// ハンバーガーメニュー
 $(function() {
 	$('.js-btn').on('click',function() {
 		$('.menu , .btn-line').toggleClass('open');
 	})
 });
 
+// skill
 let todo = ['<i class="fab fa-html5"> HTML5', '<i class="fab fa-css3-alt"> CSS', '<i class="fab fa-js"> JavaScript'];
 for(let item of todo) {
 	const li = `<li>${item}</li>`;
@@ -40,3 +42,10 @@ for(let item of todo3) {
 	const li = `<li>${item}</li>`;
 	document.getElementById('devops').insertAdjacentHTML('beforeend', li);
 }
+
+// ナビゲーションメニュー
+$(document).ready(function(){
+	$('.submenu h3').on('click', function(){
+		$(this).next().toggleClass('hidden');
+	});
+});
